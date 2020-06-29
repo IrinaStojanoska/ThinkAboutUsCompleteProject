@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThinkAboutUs.API", "ThinkAboutUs.API\ThinkAboutUs.API.csproj", "{6BD004F1-4D32-4939-B52E-14460A8DE29D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BD004F1-4D32-4939-B52E-14460A8DE29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BD004F1-4D32-4939-B52E-14460A8DE29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BD004F1-4D32-4939-B52E-14460A8DE29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BD004F1-4D32-4939-B52E-14460A8DE29D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6440D37-216A-4036-B82E-0BFB17C7BE11}
+	EndGlobalSection
+EndGlobal

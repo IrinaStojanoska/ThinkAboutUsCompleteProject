@@ -1,0 +1,20 @@
+.gray {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.centar {
+    align-items: center;
+}
+
+app-home-tile {
+    display: block;
+}
+
+app-home-tile{
+    position: absolute;
+    top:70px;
+}
+
+

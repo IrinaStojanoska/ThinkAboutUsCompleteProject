@@ -1,0 +1,101 @@
+<app-navbar></app-navbar>
+
+<div class="container"  style="margin-top:100px">
+  <div class="card">
+    <form class="well pomesteno" [formGroup]="reportForm" (ngSubmit)="reportDog()" style="width: 500px">
+      <div class="form-group">
+        <label for="formGroupExampleInput" class="turquose"> Status </label>
+        <br>
+        <input type="radio" name="status" formControlName="status" [value]="Status.homeless" checked=true> Homeless<span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        <input type="radio" name="status" formControlName="status" [value]="Status.lost"> Lost
+        <br>
+      </div>
+      <!-- <input type="text" class="form-control" formControlName="status" id="status" placeholder="Adopted or Homeless"> -->
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Code</label>
+        <input type="text" class="form-control" formControlName="code" id="code" placeholder="Code">
+
+        <div *ngIf="submitted && reportForm.controls.code.errors" class="cross-validation-error-message alert alert-danger">
+            <div *ngIf="reportForm.controls.code.errors.required">Code for dog is required</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Size</label> &nbsp;
+        <select class="form-control" formControlName="size" >
+            <option *ngFor="let size of sizes" value={{size.id}}> 
+                {{size.name}}
+            </option>
+    </select>
+      
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Gender</label>
+        <br>
+        <input type="radio" formControlName="gender" [value]="Gender.male" checked=true> Male
+        <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+        <input type="radio" formControlName="gender" [value]="Gender.female"> Female
+        <br>
+
+        <!-- <input type="text" class="form-control" formControlName="gender" id="gender" placeholder="Male or Female"> -->
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Location</label>
+        <input type="text" class="form-control" formControlName="location" id="location" placeholder="Location">
+        <div *ngIf="submitted && reportForm.controls.location.errors" class="cross-validation-error-message alert alert-danger">
+            <div *ngIf="reportForm.controls.location.errors.required">Location is required</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Breed</label>
+        <input type="text" class="form-control" formControlName="breed" id="breed" placeholder="Breed">
+
+        <div *ngIf="submitted && reportForm.controls.breed.errors" class="cross-validation-error-message alert alert-danger">
+            <div *ngIf="reportForm.controls.breed.errors.required">Dog breed is required</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Description</label>
+        <input type="text" class="form-control" formControlName="description" id="description" placeholder="Description">
+
+        <div *ngIf="submitted && reportForm.controls.description.errors" class="cross-validation-error-message alert alert-danger">
+            <div *ngIf="reportForm.controls.description.errors.required"> Dog description is required</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Image</label>
+        <input type="text" class="form-control" formControlName="image" id="image" placeholder="Your image link">
+
+        <div *ngIf="submitted && reportForm.controls.image.errors" class="cross-validation-error-message alert alert-danger">
+            <div *ngIf="reportForm.controls.image.errors.required">Dog image is required</div>
+          </div>
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Contact</label>
+        <input type="text" class="form-control" formControlName="contactEmail" id="contactEmail" placeholder="Your email">
+
+        <div *ngIf="submitted && reportForm.controls.contactEmail.errors" class="cross-validation-error-message alert alert-danger">
+            <div *ngIf="reportForm.controls.contactEmail.errors.required">Your e-mail is required</div>
+          </div>
+      
+      </div>
+
+      <div class="form-group">
+        <label for="formGroupExampleInput2" class="turquose">Contact phone</label>
+        <input type="text" class="form-control" formControlName="contactPhone" id="contactPhone" placeholder="Your phone number">
+      </div>
+
+      <button type="button" class="btn btn-danger" [routerLink]="['/home']">Cancel</button>
+      <button type="submit" class="btn btn-success desno zeleno-kopce">Report</button>
+    </form>
+
+
+  </div>
+</div>

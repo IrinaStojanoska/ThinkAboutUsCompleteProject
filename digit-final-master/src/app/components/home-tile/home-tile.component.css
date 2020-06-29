@@ -1,0 +1,192 @@
+/* .white {
+    background: darkgray;
+}
+
+
+
+.x-button {
+    float: right;
+    background: transparent;
+    margin-top: 15%;
+}
+
+.cityImage {
+    float: left;
+    margin-bottom: 10%;
+    height: 100%;
+    width: 100%;
+    min-width: 50px;
+    min-height: 70px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.gray {
+    background: darkgray;
+}
+
+.cityName {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.tdCityName {
+    width: 40%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.black {
+    color: black;
+}
+
+.resLink :hover {
+    color: blue;
+}
+
+.cities-btn {
+    float: right;
+    margin-bottom: 10px;
+    
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: darkgray;
+}
+
+
+.btn{
+    width: 100%;
+    
+}
+
+.centered {
+    position: center;
+} */
+
+
+/* .card {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* .card {
+    display: flex;
+    flex-direction: row;
+    /* display: block; }*/
+ 
+ 
+ /* .card {
+    width: 33%;
+    display: block;
+
+ } */
+/* 
+ .card {
+    max-width: 50%;
+    margin-left: 37%;
+ }
+
+ .small-items{
+     max-width:80px;
+     max-height: 120px;
+ }
+
+ .gray {
+     width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.centar {
+    align-items: center;
+}
+
+.row {
+    width: 33%;
+    display: block;
+} */
+
+/* 
+.homeParent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.homeTile {
+    width: 33%;
+}
+*/
+
+.small-items{
+    width: 100%;
+    height: 100%;
+    float: center;
+} 
+
+.krug {
+    border-radius: 100%;
+    /* opacity: 0.8; */
+}
+
+.opac{
+    opacity: 0.6;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: 0 0px 0px -0px rgba(0,0,0,0), 0 1px 1px 0 rgba(0,0,0,0), 0 1px 3px 0 rgba(0,0,0,0);
+}
+
+.left {
+    /* transform: translateX(83%); */
+    /* position: relative;
+    left: 500px; */
+}
+
+.kocka{
+    height: 80px;
+    width: 80px;
+    overflow: hidden;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+mat-card{
+    width: 10%;
+    /* margin-top: 100px;
+    margin-bottom:100px; */
+    height:auto;
+    position: relative;
+    left: 1050px;
+    
+    background: transparent;
+}
+/*  
+mat-card>img {
+     padding-bottom: 15px; 
+} */
+
+mat-card-title {
+    padding-bottom: 10px;
+}
+
+
+.homebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.turquose {
+    color: white;
+    background-color: #047B69;
+}

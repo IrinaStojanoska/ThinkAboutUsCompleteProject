@@ -1,0 +1,32 @@
+.zeleno-kopce {
+    background-color: #047B69;
+    border-color: #047B69;
+    margin-right: 10px;
+    color: white
+}
+
+.crveno-kopce {
+    background-color: red;
+    border-color: #047B69;
+    margin-right: 10px;
+    color: white
+}
+
+li {
+    cursor: pointer;
+    list-style-type: none;
+}
+
+.dog-item {
+    height: 230px;
+    border:1px solid #ddd;
+}
+
+ img {
+    width: 250px;
+    min-height: 100px;
+    max-height: 150px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 5px
+}

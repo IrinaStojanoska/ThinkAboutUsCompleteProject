@@ -1,0 +1,14 @@
+.podolu {
+    margin-top: 85px;
+}
+
+.centered-text {
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+    color: #047B69;
+}
+
+.brightness {
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%); 
+}

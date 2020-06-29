@@ -1,0 +1,50 @@
+<app-navbar></app-navbar>
+
+<div class="container" style="margin-top:100px">
+    <div class="card">
+        <div class="card-header">
+            <h2>Reports</h2>
+        </div>
+
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="hidden">#</th>
+                    <th>Submitter e-mail</th>
+                    <th>Submitter phone</th>
+                    <th>Date reported</th>
+                    <th>Dog Status</th>
+                    <th>Dog</th>
+                    <th>Notify</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let report of reports">
+                    <td class="hidden">{{report.id}}</td>
+                    <td>{{report.contactEmail}}</td>
+                    <td>{{report.contactNumber}}</td>
+                    <td>
+                     {{report.dateReported | date}}
+                    </td>
+                    <td>
+                        <span *ngIf="report.dog.status == 0"><b>Homeless</b></span>
+                        <span *ngIf="report.dog.status == 1"><b>Lost</b></span>
+                        <span *ngIf="report.dog.status == 2"><b>Pending</b></span>
+                        <span *ngIf="report.dog.status == 3"><b>Pending </b></span>
+                       </td>
+                    <td>
+                      <button class="btn btn-info" (click)="seeMore(report.dog)">Dog details</button>
+                    </td>
+                    <td> <button class="btn btn-secondary"(click)="sendEmail(report)">Send e-mail</button></td>
+                    <td>
+                        <button *ngIf="report.dog.status == 0 || report.dog.status == 2" class="btn btn-success" (click)="confirmDogSaved(report)">Confirm adopted</button>
+                        <button *ngIf="report.dog.status == 1 || report.dog.status == 3" class="btn btn-success" (click)="confirmDogSaved(report)">Confirm found</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>
